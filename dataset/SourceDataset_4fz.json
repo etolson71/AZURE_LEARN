@@ -1,0 +1,53 @@
+{
+	"name": "SourceDataset_4fz",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "stock_data_20240914.csv",
+				"container": "stockdata"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ticker",
+				"type": "String"
+			},
+			{
+				"name": "ref_date",
+				"type": "String"
+			},
+			{
+				"name": "price_open",
+				"type": "String"
+			},
+			{
+				"name": "price_high",
+				"type": "String"
+			},
+			{
+				"name": "price_low",
+				"type": "String"
+			},
+			{
+				"name": "price_close",
+				"type": "String"
+			},
+			{
+				"name": "volume",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

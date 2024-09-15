@@ -1,0 +1,60 @@
+{
+	"name": "DestinationDataset_rbx",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ticker",
+				"type": "nvarchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "ref_date",
+				"type": "date",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "price_open",
+				"type": "float",
+				"precision": 53,
+				"scale": 0
+			},
+			{
+				"name": "price_high",
+				"type": "float",
+				"precision": 53,
+				"scale": 0
+			},
+			{
+				"name": "price_low",
+				"type": "float",
+				"precision": 53,
+				"scale": 0
+			},
+			{
+				"name": "price_close",
+				"type": "float",
+				"precision": 53,
+				"scale": 0
+			},
+			{
+				"name": "volume",
+				"type": "float",
+				"precision": 53,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "stockprices"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

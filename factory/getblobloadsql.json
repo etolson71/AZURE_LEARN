@@ -1,0 +1,9 @@
+{
+	"name": "getblobloadsql",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "62c04810-902a-4db8-9e86-546f8bab8b71",
+		"tenantId": "26a7705e-ee99-45d0-88e0-96e05c6b90c7"
+	}
+}
