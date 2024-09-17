@@ -1,0 +1,13 @@
+{
+	"name": "AzureMLService1",
+	"properties": {
+		"annotations": [],
+		"type": "AzureMLService",
+		"typeProperties": {
+			"subscriptionId": "317ef170-09fc-48e9-8fd8-62987e63cf9f",
+			"resourceGroupName": "PROJECT_LEARN",
+			"mlWorkspaceName": "ML_Learning_R_Scripts",
+			"authentication": "MSI"
+		}
+	}
+}
